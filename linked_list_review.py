@@ -42,6 +42,23 @@ def remove_largest(node):
         before_l.next = before_l.next.next  
     return head
 
+def del_middle_node(node):
+    head = node
+    f = node
+    s = node
+    tick = False
+    while f.next:
+        f = f.next
+        if tick:
+            b_s = s
+            s = s.next
+        tick = not tick
+    if f == head.next:
+        head = head.next
+    else:
+        b_s.next = b_s.next.next
+
+    return head
 
 f = Node(1)
 s = Node(2)
@@ -59,11 +76,18 @@ nums = [9, 7, 5]
 
 ll2 = Linked_List()
 ll2.build_from_list(nums)
-#  ll2.iterate()
+ll2.iterate()
 # print(ll2.return_head())
 
 ll3 = Linked_List()
 largest_removed = remove_largest(ll2.head)
 ll3.head = largest_removed
 
-ll3.iterate()
+# ll3.iterate()
+
+ll4 = Linked_List()
+
+
+ll4.head = del_middle_node(ll2.head)
+ll4.iterate()
+
