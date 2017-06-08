@@ -76,7 +76,7 @@ nums = [9, 7, 5]
 
 ll2 = Linked_List()
 ll2.build_from_list(nums)
-ll2.iterate()
+# ll2.iterate()
 # print(ll2.return_head())
 
 ll3 = Linked_List()
@@ -89,5 +89,34 @@ ll4 = Linked_List()
 
 
 ll4.head = del_middle_node(ll2.head)
-ll4.iterate()
+# ll4.iterate()
+
+ll5 = Linked_List()
+ll5.build_from_list([9,2,9,3,5,8,5,10,2,1])
+
+def partition(node, val):
+    b_n = node
+    head = node
+    right = False
+    while node:
+        if node.data < val:
+            if node == head:
+                node = node.next
+            else:
+                head = Node(node.data, head)
+                b_n.next = node.next
+        else:
+            right = True
+            if right:
+                r_e = node
+        b_n = node
+        node = node.next
+    r_e.next = None
+    return head
+
+# ll5.iterate()
+
+ll6 = Linked_List()
+ll6.head = partition(ll5.head, 5)
+ll6.iterate()
 
