@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33e8a163-efb0-4928-b899-9422ac248717" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/largest_sum_of_ints_in_multichar_string.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/string_is_rotation_with_constraints.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/combine_reversed_vals_linked_lists.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/three_values_sum_to_zero.py" afterPath="$PROJECT_DIR$/three_values_sum_to_zero.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linked_list_review.py" afterPath="$PROJECT_DIR$/linked_list_review.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="linked_list_review.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="linked_list_review.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linked_list_review.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2007">
-              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state relative-caret-position="395">
+              <caret line="145" column="24" lean-forward="false" selection-start-line="145" selection-start-column="24" selection-end-line="145" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -78,11 +76,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="largest_sum_of_ints_in_multichar_string.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="largest_sum_of_ints_in_multichar_string.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/largest_sum_of_ints_in_multichar_string.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
               <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="combine_reversed_vals_linked_lists.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/combine_reversed_vals_linked_lists.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,12 +122,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/deque.py" />
-        <option value="$PROJECT_DIR$/linked_list_review.py" />
         <option value="$PROJECT_DIR$/partition_linked_list.py" />
         <option value="$PROJECT_DIR$/three_values_sum_to_zero.py" />
         <option value="$PROJECT_DIR$/Queue.py" />
         <option value="$PROJECT_DIR$/string_is_rotation_with_constraints.py" />
         <option value="$PROJECT_DIR$/largest_sum_of_ints_in_multichar_string.py" />
+        <option value="$PROJECT_DIR$/combine_reversed_vals_linked_lists.py" />
+        <option value="$PROJECT_DIR$/linked_list_review.py" />
       </list>
     </option>
   </component>
@@ -177,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.largest_sum_of_ints_in_multichar_string">
+  <component name="RunManager" selected="Python.linked_list_review">
     <configuration default="false" name="linked_list_review" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -341,16 +350,19 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.largest_sum_of_ints_in_multichar_string" />
-        <item index="1" class="java.lang.String" itemvalue="Python.string_is_rotation_with_constraints" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Queue" />
-        <item index="3" class="java.lang.String" itemvalue="Python.three_values_sum_to_zero" />
-        <item index="4" class="java.lang.String" itemvalue="Python.linked_list_review" />
+        <item index="0" class="java.lang.String" itemvalue="Python.linked_list_review" />
+        <item index="1" class="java.lang.String" itemvalue="Python.largest_sum_of_ints_in_multichar_string" />
+        <item index="2" class="java.lang.String" itemvalue="Python.string_is_rotation_with_constraints" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Queue" />
+        <item index="4" class="java.lang.String" itemvalue="Python.three_values_sum_to_zero" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -370,7 +382,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="140" y="123" width="1185" height="673" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -447,14 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linked_list_review.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2007">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/three_values_sum_to_zero.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -483,6 +487,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combine_reversed_vals_linked_lists.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linked_list_review.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="145" column="24" lean-forward="false" selection-start-line="145" selection-start-column="24" selection-end-line="145" selection-end-column="24" />
           <folding />
         </state>
       </provider>

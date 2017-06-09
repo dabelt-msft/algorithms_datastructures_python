@@ -118,5 +118,31 @@ def partition(node, val):
 
 ll6 = Linked_List()
 ll6.head = partition(ll5.head, 5)
-ll6.iterate()
+# ll6.iterate()
 
+
+def combine_vals(node):
+    total = 0
+    mult = 1
+    while node:
+        val = node.data
+        val *= mult
+        total += val
+        mult *= 10
+        node = node.next
+    return total
+
+
+ll7 = Linked_List()
+ll7.build_from_list([4, 4, 4])
+print(combine_vals(ll7.head))
+
+
+def add_sums_two_linked(head1, head2):
+    total = combine_vals(head1)
+    return total + combine_vals(head2)
+
+ll8 = Linked_List()
+ll8.build_from_list([4, 4, 4, 4])
+
+print(add_sums_two_linked(ll8.head, ll7.head))
