@@ -9,19 +9,22 @@ def binary_search_util(nums, left, right, item):
     else:
         return binary_search_util(nums, index + 1, right, item)
 
-
-def find_trips(nums):
+#Find all combinations of numbers that sum to zero
+def find_trips_whose_sum_is_zero(nums):
     trips = set()
     l = 0
     r = len(nums) - 1
+    left = nums[l]
+    right = nums[r]
+    print((abs(left) / 2 + 1) // 1)
+
     while l < r:
-        while r > (abs(l) / 2 + 1)//1:
-            left = nums[l]
-            right = nums[r]
+        while right > (abs(left) / 2 + 1)//1:
+
             needed = 0 - (left + right)
             if left == 0 or right == 0:
                 break
-            if needed > left and needed < right and binary_search_util(nums, l + 1, r, needed) != -1:
+            if needed > left and needed <  right and binary_search_util(nums, l + 1, r, needed) != -1:
                 trips.add((left, needed, right))
             r -= 1
         r = len(nums) - 1
@@ -29,6 +32,6 @@ def find_trips(nums):
     return trips
 
 
-print(find_trips([-5,-4,-3,-1,0,1,2,4,7]))
+print(find_trips_whose_sum_is_zero([-5,-4,-3,-1,0,1,2,4,7]))
 
 
